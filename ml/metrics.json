@@ -1,0 +1,533 @@
+{
+  "version": "2.1",
+  "evaluation_timestamp": "2026-09-06T14:50:06.240258+00:00",
+  "dataset_size": 3600,
+  "train_samples": 3060,
+  "test_samples": 540,
+  "winning_model": "Extra Trees Classifier",
+  "composite_score": 0.9209,
+  "features": [
+    "slope_deg",
+    "aspect_cos",
+    "aspect_sin",
+    "elevation_m",
+    "curvature",
+    "rainfall_1h_mm",
+    "rainfall_6h_mm",
+    "rainfall_24h_mm",
+    "rainfall_72h_mm",
+    "soil_moisture_effective",
+    "lithology_vulnerability",
+    "veg_cover_protection",
+    "antecedent_rainfall_ratio",
+    "slope_wetness_index",
+    "geotech_vulnerability",
+    "rainfall_burst_ratio"
+  ],
+  "provenance_summary": {
+    "A": 80,
+    "B": 1720,
+    "C": 1800
+  },
+  "models": {
+    "Extra Trees Classifier": {
+      "heldout": {
+        "accuracy": 0.9704,
+        "roc_auc": 0.9982,
+        "pr_auc": 0.9984,
+        "precision": 0.9568,
+        "recall": 0.9852,
+        "f1_score": 0.9708,
+        "brier_score": 0.0227,
+        "confusion_matrix": [
+          [
+            258,
+            12
+          ],
+          [
+            4,
+            266
+          ]
+        ]
+      },
+      "real_only_cv": {
+        "f1_mean": 0.9911,
+        "recall_mean": 0.9889,
+        "precision_mean": 0.9933
+      },
+      "source_transfer": {
+        "f1": 0.8204,
+        "recall": 0.8956,
+        "precision": 0.7568,
+        "accuracy": 0.8039,
+        "roc_auc": 0.8871,
+        "pr_auc": 0.8851,
+        "confusion_matrix": [
+          [
+            641,
+            259
+          ],
+          [
+            94,
+            806
+          ]
+        ]
+      },
+      "spatial_cv": {
+        "f1_mean": 0.9749,
+        "f1_std": 0.0068,
+        "recall_mean": 0.9798
+      },
+      "loso_cv": {
+        "f1_mean": 0.976,
+        "f1_std": 0.0047,
+        "recall_mean": 0.9802
+      },
+      "feature_importances": {
+        "slope_deg": 0.0805,
+        "aspect_cos": 0.0055,
+        "aspect_sin": 0.0051,
+        "elevation_m": 0.0075,
+        "curvature": 0.0653,
+        "rainfall_1h_mm": 0.0372,
+        "rainfall_6h_mm": 0.0657,
+        "rainfall_24h_mm": 0.04,
+        "rainfall_72h_mm": 0.0454,
+        "soil_moisture_effective": 0.1571,
+        "lithology_vulnerability": 0.1156,
+        "veg_cover_protection": 0.0722,
+        "antecedent_rainfall_ratio": 0.0392,
+        "slope_wetness_index": 0.1483,
+        "geotech_vulnerability": 0.0899,
+        "rainfall_burst_ratio": 0.0255
+      }
+    },
+    "Random Forest Classifier": {
+      "heldout": {
+        "accuracy": 0.9759,
+        "roc_auc": 0.9988,
+        "pr_auc": 0.9989,
+        "precision": 0.9606,
+        "recall": 0.9926,
+        "f1_score": 0.9763,
+        "brier_score": 0.0187,
+        "confusion_matrix": [
+          [
+            259,
+            11
+          ],
+          [
+            2,
+            268
+          ]
+        ]
+      },
+      "real_only_cv": {
+        "f1_mean": 0.9939,
+        "recall_mean": 0.9956,
+        "precision_mean": 0.9923
+      },
+      "source_transfer": {
+        "f1": 0.7936,
+        "recall": 0.8478,
+        "precision": 0.7458,
+        "accuracy": 0.7794,
+        "roc_auc": 0.8569,
+        "pr_auc": 0.858,
+        "confusion_matrix": [
+          [
+            640,
+            260
+          ],
+          [
+            137,
+            763
+          ]
+        ]
+      },
+      "spatial_cv": {
+        "f1_mean": 0.9811,
+        "f1_std": 0.0048,
+        "recall_mean": 0.9813
+      },
+      "loso_cv": {
+        "f1_mean": 0.9814,
+        "f1_std": 0.0055,
+        "recall_mean": 0.9808
+      },
+      "feature_importances": {
+        "slope_deg": 0.0601,
+        "aspect_cos": 0.0042,
+        "aspect_sin": 0.0048,
+        "elevation_m": 0.0105,
+        "curvature": 0.1063,
+        "rainfall_1h_mm": 0.0367,
+        "rainfall_6h_mm": 0.0757,
+        "rainfall_24h_mm": 0.0213,
+        "rainfall_72h_mm": 0.0294,
+        "soil_moisture_effective": 0.1508,
+        "lithology_vulnerability": 0.0801,
+        "veg_cover_protection": 0.0682,
+        "antecedent_rainfall_ratio": 0.0374,
+        "slope_wetness_index": 0.2283,
+        "geotech_vulnerability": 0.0677,
+        "rainfall_burst_ratio": 0.0186
+      }
+    },
+    "HistGradientBoosting Classifier": {
+      "heldout": {
+        "accuracy": 0.9833,
+        "roc_auc": 0.9994,
+        "pr_auc": 0.9994,
+        "precision": 0.978,
+        "recall": 0.9889,
+        "f1_score": 0.9834,
+        "brier_score": 0.0117,
+        "confusion_matrix": [
+          [
+            264,
+            6
+          ],
+          [
+            3,
+            267
+          ]
+        ]
+      },
+      "real_only_cv": {
+        "f1_mean": 0.9933,
+        "recall_mean": 0.9922,
+        "precision_mean": 0.9945
+      },
+      "source_transfer": {
+        "f1": 0.7967,
+        "recall": 0.8556,
+        "precision": 0.7454,
+        "accuracy": 0.7817,
+        "roc_auc": 0.8436,
+        "pr_auc": 0.8477,
+        "confusion_matrix": [
+          [
+            637,
+            263
+          ],
+          [
+            130,
+            770
+          ]
+        ]
+      },
+      "spatial_cv": {
+        "f1_mean": 0.982,
+        "f1_std": 0.0061,
+        "recall_mean": 0.9774
+      },
+      "loso_cv": {
+        "f1_mean": 0.9827,
+        "f1_std": 0.0069,
+        "recall_mean": 0.9787
+      },
+      "feature_importances": {}
+    },
+    "Gradient Boosting (Ensemble)": {
+      "heldout": {
+        "accuracy": 0.9852,
+        "roc_auc": 0.9993,
+        "pr_auc": 0.9993,
+        "precision": 0.9816,
+        "recall": 0.9889,
+        "f1_score": 0.9852,
+        "brier_score": 0.0115,
+        "confusion_matrix": [
+          [
+            265,
+            5
+          ],
+          [
+            3,
+            267
+          ]
+        ]
+      },
+      "real_only_cv": {
+        "f1_mean": 0.9955,
+        "recall_mean": 0.9933,
+        "precision_mean": 0.9978
+      },
+      "source_transfer": {
+        "f1": 0.7798,
+        "recall": 0.84,
+        "precision": 0.7276,
+        "accuracy": 0.7628,
+        "roc_auc": 0.8531,
+        "pr_auc": 0.8467,
+        "confusion_matrix": [
+          [
+            617,
+            283
+          ],
+          [
+            144,
+            756
+          ]
+        ]
+      },
+      "spatial_cv": {
+        "f1_mean": 0.9814,
+        "f1_std": 0.0055,
+        "recall_mean": 0.9779
+      },
+      "loso_cv": {
+        "f1_mean": 0.9828,
+        "f1_std": 0.0054,
+        "recall_mean": 0.9784
+      },
+      "feature_importances": {
+        "slope_deg": 0.0464,
+        "aspect_cos": 0.0011,
+        "aspect_sin": 0.0014,
+        "elevation_m": 0.0115,
+        "curvature": 0.0645,
+        "rainfall_1h_mm": 0.0029,
+        "rainfall_6h_mm": 0.0129,
+        "rainfall_24h_mm": 0.0076,
+        "rainfall_72h_mm": 0.0153,
+        "soil_moisture_effective": 0.0941,
+        "lithology_vulnerability": 0.0342,
+        "veg_cover_protection": 0.0803,
+        "antecedent_rainfall_ratio": 0.0216,
+        "slope_wetness_index": 0.4807,
+        "geotech_vulnerability": 0.123,
+        "rainfall_burst_ratio": 0.0025
+      }
+    },
+    "Two-Stage Feature-to-Risk Pipeline": {
+      "heldout": {
+        "accuracy": 0.9722,
+        "roc_auc": 0.9969,
+        "pr_auc": 0.9969,
+        "precision": 0.9603,
+        "recall": 0.9852,
+        "f1_score": 0.9726,
+        "brier_score": 0.0228,
+        "confusion_matrix": [
+          [
+            259,
+            11
+          ],
+          [
+            4,
+            266
+          ]
+        ]
+      },
+      "real_only_cv": {
+        "f1_mean": 0.9782,
+        "recall_mean": 0.9756,
+        "precision_mean": 0.981
+      },
+      "source_transfer": {
+        "f1": 0.7914,
+        "recall": 0.7967,
+        "precision": 0.7862,
+        "accuracy": 0.79,
+        "roc_auc": 0.794,
+        "pr_auc": 0.8434,
+        "confusion_matrix": [
+          [
+            705,
+            195
+          ],
+          [
+            183,
+            717
+          ]
+        ]
+      },
+      "spatial_cv": {
+        "f1_mean": 0.974,
+        "f1_std": 0.0099,
+        "recall_mean": 0.9719
+      },
+      "loso_cv": {
+        "f1_mean": 0.9738,
+        "f1_std": 0.0082,
+        "recall_mean": 0.9749
+      },
+      "feature_importances": {
+        "slope_deg": 0.0372,
+        "aspect_cos": 0.0039,
+        "aspect_sin": 0.0038,
+        "elevation_m": 0.0145,
+        "curvature": 0.0832,
+        "rainfall_1h_mm": 0.0012,
+        "rainfall_6h_mm": 0.0015,
+        "rainfall_24h_mm": 0.0016,
+        "rainfall_72h_mm": 0.0015,
+        "soil_moisture_effective": 0.0053,
+        "lithology_vulnerability": 0.0559,
+        "veg_cover_protection": 0.0441,
+        "antecedent_rainfall_ratio": 0.0061,
+        "slope_wetness_index": 0.1998,
+        "geotech_vulnerability": 0.0576,
+        "rainfall_burst_ratio": 0.0009
+      }
+    },
+    "Logistic Regression Baseline": {
+      "heldout": {
+        "accuracy": 0.9389,
+        "roc_auc": 0.9873,
+        "pr_auc": 0.9875,
+        "precision": 0.9072,
+        "recall": 0.9778,
+        "f1_score": 0.9412,
+        "brier_score": 0.0466,
+        "confusion_matrix": [
+          [
+            243,
+            27
+          ],
+          [
+            6,
+            264
+          ]
+        ]
+      },
+      "real_only_cv": {
+        "f1_mean": 0.9193,
+        "recall_mean": 0.9211,
+        "precision_mean": 0.9182
+      },
+      "source_transfer": {
+        "f1": 0.8769,
+        "recall": 0.9067,
+        "precision": 0.8491,
+        "accuracy": 0.8728,
+        "roc_auc": 0.9403,
+        "pr_auc": 0.9479,
+        "confusion_matrix": [
+          [
+            755,
+            145
+          ],
+          [
+            84,
+            816
+          ]
+        ]
+      },
+      "spatial_cv": {
+        "f1_mean": 0.9458,
+        "f1_std": 0.0221,
+        "recall_mean": 0.9477
+      },
+      "loso_cv": {
+        "f1_mean": 0.9426,
+        "f1_std": 0.0192,
+        "recall_mean": 0.9461
+      },
+      "feature_importances": {
+        "slope_deg": 0.06,
+        "aspect_cos": 0.061,
+        "aspect_sin": 0.1454,
+        "elevation_m": 0.3182,
+        "curvature": 0.8347,
+        "rainfall_1h_mm": 1.9619,
+        "rainfall_6h_mm": 1.5024,
+        "rainfall_24h_mm": 0.0495,
+        "rainfall_72h_mm": 1.0107,
+        "soil_moisture_effective": 2.0661,
+        "lithology_vulnerability": 1.1976,
+        "veg_cover_protection": 1.3875,
+        "antecedent_rainfall_ratio": 1.5847,
+        "slope_wetness_index": 2.7229,
+        "geotech_vulnerability": 0.2324,
+        "rainfall_burst_ratio": 1.3579
+      }
+    }
+  },
+  "label_permutation_test": {
+    "shuffled_f1_mean": 0.4488,
+    "shuffled_f1_std": 0.0602,
+    "passed": true
+  },
+  "feature_ablation": {
+    "slope_deg": {
+      "f1_without": 0.9761,
+      "f1_drop": 0.0055
+    },
+    "aspect_cos": {
+      "f1_without": 0.9817,
+      "f1_drop": 0.0
+    },
+    "aspect_sin": {
+      "f1_without": 0.9835,
+      "f1_drop": -0.0018
+    },
+    "elevation_m": {
+      "f1_without": 0.9818,
+      "f1_drop": -0.0001
+    },
+    "curvature": {
+      "f1_without": 0.9745,
+      "f1_drop": 0.0071
+    },
+    "rainfall_1h_mm": {
+      "f1_without": 0.9799,
+      "f1_drop": 0.0018
+    },
+    "rainfall_6h_mm": {
+      "f1_without": 0.9835,
+      "f1_drop": -0.0018
+    },
+    "rainfall_24h_mm": {
+      "f1_without": 0.9835,
+      "f1_drop": -0.0018
+    },
+    "rainfall_72h_mm": {
+      "f1_without": 0.9852,
+      "f1_drop": -0.0036
+    },
+    "soil_moisture_effective": {
+      "f1_without": 0.9672,
+      "f1_drop": 0.0145
+    },
+    "lithology_vulnerability": {
+      "f1_without": 0.9691,
+      "f1_drop": 0.0125
+    },
+    "veg_cover_protection": {
+      "f1_without": 0.9834,
+      "f1_drop": -0.0017
+    },
+    "antecedent_rainfall_ratio": {
+      "f1_without": 0.9781,
+      "f1_drop": 0.0036
+    },
+    "slope_wetness_index": {
+      "f1_without": 0.9815,
+      "f1_drop": 0.0001
+    },
+    "geotech_vulnerability": {
+      "f1_without": 0.9797,
+      "f1_drop": 0.0019
+    },
+    "rainfall_burst_ratio": {
+      "f1_without": 0.9835,
+      "f1_drop": -0.0018
+    }
+  },
+  "calibration": {
+    "pre_calibration_brier": 0.0217,
+    "post_calibration_brier": 0.0188,
+    "calibration_improved": true
+  },
+  "validation_strategy": "V2.1 Multi-Methodology: 50% Real Data + Real-Only CV + Synthetic-to-Real Transfer + Spatial GroupKFold + Leave-One-State-Out",
+  "scientific_notes": [
+    "Dataset balanced to 1,800 real-world records (900 positives + 900 hard negatives) + 1,800 supporting archetypes.",
+    "Hard negatives include real IMD stations under extreme rain, hard granite/gneiss ridges holding under monsoon, engineered highway cuts, and root-stabilized tea slopes.",
+    "Sample-weighted training prioritizes genuine observations (w=3.0-4.0) over synthetic archetypes (w=1.0).",
+    "Leave-One-State-Out (LOSO) verifies geographic generalization across all 8 North-Eastern states.",
+    "Probability calibration evaluated on cross-validation folds to preserve independent test set integrity."
+  ]
+}

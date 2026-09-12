@@ -1,0 +1,293 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-01",
+        "name": "NEIGRIHMS Multi-Specialty Hospital",
+        "type": "HOSPITAL",
+        "state": "Meghalaya",
+        "district": "East Khasi Hills",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9365,
+          25.5925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-02",
+        "name": "STNM State Super Specialty Hospital",
+        "type": "HOSPITAL",
+        "state": "Sikkim",
+        "district": "Gangtok (East Sikkim)",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.614,
+          27.321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-03",
+        "name": "Haflong Civil Hospital",
+        "type": "HOSPITAL",
+        "state": "Assam",
+        "district": "Dima Hasao",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.018,
+          25.178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-04",
+        "name": "Naga Hospital Authority Kohima",
+        "type": "HOSPITAL",
+        "state": "Nagaland",
+        "district": "Kohima",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.102,
+          25.665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-05",
+        "name": "Civil Hospital Aizawl",
+        "type": "HOSPITAL",
+        "state": "Mizoram",
+        "district": "Aizawl",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.715,
+          23.722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-06",
+        "name": "Tawang District Hospital",
+        "type": "HOSPITAL",
+        "state": "Arunachal Pradesh",
+        "district": "Tawang",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.861,
+          27.584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-HOSP-07",
+        "name": "RIMS Regional Institute of Medical Sciences",
+        "type": "HOSPITAL",
+        "state": "Manipur",
+        "district": "Imphal West",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.921,
+          24.821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-SHEL-01",
+        "name": "Gangtok Indoor Disaster Relief Center",
+        "type": "SHELTER",
+        "state": "Sikkim",
+        "district": "Gangtok (East Sikkim)",
+        "criticality": "MEDIUM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.601,
+          27.332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-SHEL-02",
+        "name": "Haflong Stadium Emergency Hub",
+        "type": "SHELTER",
+        "state": "Assam",
+        "district": "Dima Hasao",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.021,
+          25.172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-SHEL-03",
+        "name": "Kohima Disaster Management Staging Area",
+        "type": "SHELTER",
+        "state": "Nagaland",
+        "district": "Kohima",
+        "criticality": "HIGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.112,
+          25.681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-SHEL-04",
+        "name": "Aizawl Multi-Purpose Community Shelter",
+        "type": "SHELTER",
+        "state": "Mizoram",
+        "district": "Aizawl",
+        "criticality": "MEDIUM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.723,
+          23.731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-BDG-01",
+        "name": "Teesta River Suspension Bridge (Singtam)",
+        "type": "BRIDGE",
+        "state": "Sikkim",
+        "district": "Gangtok (East Sikkim)",
+        "criticality": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.498,
+          27.235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-BDG-02",
+        "name": "Irang River Steel Arch Bridge",
+        "type": "BRIDGE",
+        "state": "Manipur",
+        "district": "Noney",
+        "criticality": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.585,
+          24.762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-BDG-03",
+        "name": "Jatinga Rail-cum-Road Bridge",
+        "type": "BRIDGE",
+        "state": "Assam",
+        "district": "Dima Hasao",
+        "criticality": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.042,
+          25.132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-BDG-04",
+        "name": "Sonapur Tunnel & Viaduct",
+        "type": "TUNNEL",
+        "state": "Meghalaya",
+        "district": "East Jaintia Hills",
+        "criticality": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.361,
+          25.148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INF-BDG-05",
+        "name": "Dz\u00fcdza Culvert & Retaining Wall Complex",
+        "type": "CULVERT",
+        "state": "Nagaland",
+        "district": "Kohima",
+        "criticality": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.075,
+          25.712
+        ]
+      }
+    }
+  ]
+}

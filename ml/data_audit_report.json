@@ -1,0 +1,25 @@
+{
+  "dataset_size": 3600,
+  "positive_samples": 1800,
+  "negative_samples": 1800,
+  "provenance": {
+    "A": 80,
+    "B": 1720,
+    "C": 1800
+  },
+  "real_data_pct": 50.0,
+  "exact_duplicates": 0,
+  "near_duplicates": 0,
+  "shortcut_features": [],
+  "vegetation_shortcut_broken": true,
+  "state_distribution": {
+    "Manipur": 453,
+    "Assam": 444,
+    "Sikkim": 475,
+    "Nagaland": 485,
+    "Meghalaya": 483,
+    "Mizoram": 382,
+    "Arunachal Pradesh": 488,
+    "Tripura": 390
+  }
+}

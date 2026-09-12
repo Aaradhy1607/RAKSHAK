@@ -1,0 +1,165 @@
+{
+  "model": "ExtraTreesClassifier",
+  "baseline": {
+    "f1": 0.9708,
+    "recall": 0.9852,
+    "accuracy": 0.9704
+  },
+  "noise_injection": {
+    "5pct": {
+      "f1": 0.9673,
+      "recall": 0.9852,
+      "f1_drop": 0.0035,
+      "stability": "STABLE"
+    },
+    "10pct": {
+      "f1": 0.9673,
+      "recall": 0.9852,
+      "f1_drop": 0.0035,
+      "stability": "STABLE"
+    },
+    "20pct": {
+      "f1": 0.962,
+      "recall": 0.9852,
+      "f1_drop": 0.0088,
+      "stability": "STABLE"
+    }
+  },
+  "missing_feature": {
+    "slope_deg": {
+      "f1_without": 0.9701,
+      "f1_drop": 0.0007
+    },
+    "aspect_cos": {
+      "f1_without": 0.9708,
+      "f1_drop": 0.0
+    },
+    "aspect_sin": {
+      "f1_without": 0.9708,
+      "f1_drop": 0.0
+    },
+    "elevation_m": {
+      "f1_without": 0.969,
+      "f1_drop": 0.0018
+    },
+    "curvature": {
+      "f1_without": 0.9689,
+      "f1_drop": 0.0019
+    },
+    "rainfall_1h_mm": {
+      "f1_without": 0.9709,
+      "f1_drop": -0.0001
+    },
+    "rainfall_6h_mm": {
+      "f1_without": 0.9761,
+      "f1_drop": -0.0053
+    },
+    "rainfall_24h_mm": {
+      "f1_without": 0.9655,
+      "f1_drop": 0.0053
+    },
+    "rainfall_72h_mm": {
+      "f1_without": 0.9725,
+      "f1_drop": -0.0017
+    },
+    "soil_moisture_effective": {
+      "f1_without": 0.8584,
+      "f1_drop": 0.1125
+    },
+    "lithology_vulnerability": {
+      "f1_without": 0.9635,
+      "f1_drop": 0.0073
+    },
+    "veg_cover_protection": {
+      "f1_without": 0.9319,
+      "f1_drop": 0.0389
+    },
+    "antecedent_rainfall_ratio": {
+      "f1_without": 0.9815,
+      "f1_drop": -0.0107
+    },
+    "slope_wetness_index": {
+      "f1_without": 0.9575,
+      "f1_drop": 0.0133
+    },
+    "geotech_vulnerability": {
+      "f1_without": 0.9794,
+      "f1_drop": -0.0086
+    },
+    "rainfall_burst_ratio": {
+      "f1_without": 0.9727,
+      "f1_drop": -0.0019
+    }
+  },
+  "boundary_tests": {
+    "results": [
+      {
+        "name": "Dry Cliff (steep, no rain)",
+        "predicted": 0,
+        "probability": 0.0356,
+        "expected": 0,
+        "correct": true
+      },
+      {
+        "name": "Flat Monsoon (gentle, extreme rain)",
+        "predicted": 0,
+        "probability": 0.0285,
+        "expected": 0,
+        "correct": true
+      },
+      {
+        "name": "Fragile Road Cut (steep shale, moderate rain)",
+        "predicted": 1,
+        "probability": 0.9985,
+        "expected": 1,
+        "correct": true
+      },
+      {
+        "name": "Forested Gneiss Ridge (steep, hard rock, dense canopy)",
+        "predicted": 0,
+        "probability": 0.0232,
+        "expected": 0,
+        "correct": true
+      },
+      {
+        "name": "Extreme Saturation Failure (dense forest, extreme rain on weak rock)",
+        "predicted": 1,
+        "probability": 0.995,
+        "expected": 1,
+        "correct": true
+      },
+      {
+        "name": "Tea Garden Stable Slope",
+        "predicted": 0,
+        "probability": 0.0269,
+        "expected": 0,
+        "correct": true
+      }
+    ],
+    "score": "6/6"
+  },
+  "error_analysis": {
+    "true_negatives": 258,
+    "false_positives": 12,
+    "false_negatives": 4,
+    "true_positives": 266
+  },
+  "external_holdout": {
+    "train_size": 1800,
+    "test_size": 1800,
+    "f1": 0.8204,
+    "recall": 0.8956,
+    "precision": 0.7568,
+    "accuracy": 0.8039,
+    "confusion_matrix": [
+      [
+        641,
+        259
+      ],
+      [
+        94,
+        806
+      ]
+    ]
+  }
+}

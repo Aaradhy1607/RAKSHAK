@@ -1,0 +1,1449 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dima Hasao",
+        "state": "Assam",
+        "elevation_m": 650,
+        "base_slope_deg": 34,
+        "population": 214000,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.8045,
+              24.9634
+            ],
+            [
+              93.2445,
+              24.9634
+            ],
+            [
+              93.2445,
+              25.4034
+            ],
+            [
+              92.8045,
+              25.4034
+            ],
+            [
+              92.8045,
+              24.9634
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karbi Anglong",
+        "state": "Assam",
+        "elevation_m": 420,
+        "base_slope_deg": 26,
+        "population": 965000,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.23,
+              25.93
+            ],
+            [
+              93.67,
+              25.93
+            ],
+            [
+              93.67,
+              26.37
+            ],
+            [
+              93.23,
+              26.37
+            ],
+            [
+              93.23,
+              25.93
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cachar",
+        "state": "Assam",
+        "elevation_m": 85,
+        "base_slope_deg": 18,
+        "population": 1736000,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.58,
+              24.6133
+            ],
+            [
+              93.02,
+              24.6133
+            ],
+            [
+              93.02,
+              25.0533
+            ],
+            [
+              92.58,
+              25.0533
+            ],
+            [
+              92.58,
+              24.6133
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamrup Metropolitan",
+        "state": "Assam",
+        "elevation_m": 55,
+        "base_slope_deg": 22,
+        "population": 1253000,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.5162,
+              25.9245
+            ],
+            [
+              91.9562,
+              25.9245
+            ],
+            [
+              91.9562,
+              26.3645
+            ],
+            [
+              91.5162,
+              26.3645
+            ],
+            [
+              91.5162,
+              25.9245
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hailakandi",
+        "state": "Assam",
+        "elevation_m": 60,
+        "base_slope_deg": 16,
+        "population": 659000,
+        "risk_baseline": "LOW"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.34,
+              24.46
+            ],
+            [
+              92.78,
+              24.46
+            ],
+            [
+              92.78,
+              24.9
+            ],
+            [
+              92.34,
+              24.9
+            ],
+            [
+              92.34,
+              24.46
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Papum Pare",
+        "state": "Arunachal Pradesh",
+        "elevation_m": 780,
+        "base_slope_deg": 38,
+        "population": 176000,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.4,
+              26.9
+            ],
+            [
+              93.84,
+              26.9
+            ],
+            [
+              93.84,
+              27.34
+            ],
+            [
+              93.4,
+              27.34
+            ],
+            [
+              93.4,
+              26.9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tawang",
+        "state": "Arunachal Pradesh",
+        "elevation_m": 3048,
+        "base_slope_deg": 44,
+        "population": 49977,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.6394,
+              27.3661
+            ],
+            [
+              92.0794,
+              27.3661
+            ],
+            [
+              92.0794,
+              27.8061
+            ],
+            [
+              91.6394,
+              27.8061
+            ],
+            [
+              91.6394,
+              27.3661
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Kameng",
+        "state": "Arunachal Pradesh",
+        "elevation_m": 1850,
+        "base_slope_deg": 41,
+        "population": 83936,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.2,
+              27.04
+            ],
+            [
+              92.64,
+              27.04
+            ],
+            [
+              92.64,
+              27.48
+            ],
+            [
+              92.2,
+              27.48
+            ],
+            [
+              92.2,
+              27.04
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Siang",
+        "state": "Arunachal Pradesh",
+        "elevation_m": 350,
+        "base_slope_deg": 32,
+        "population": 99019,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              95.11,
+              27.85
+            ],
+            [
+              95.55,
+              27.85
+            ],
+            [
+              95.55,
+              28.29
+            ],
+            [
+              95.11,
+              28.29
+            ],
+            [
+              95.11,
+              27.85
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dibang Valley",
+        "state": "Arunachal Pradesh",
+        "elevation_m": 2200,
+        "base_slope_deg": 46,
+        "population": 8004,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              95.58,
+              28.76
+            ],
+            [
+              96.02,
+              28.76
+            ],
+            [
+              96.02,
+              29.2
+            ],
+            [
+              95.58,
+              29.2
+            ],
+            [
+              95.58,
+              28.76
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Noney",
+        "state": "Manipur",
+        "elevation_m": 620,
+        "base_slope_deg": 42,
+        "population": 58000,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.38,
+              24.5633
+            ],
+            [
+              93.82,
+              24.5633
+            ],
+            [
+              93.82,
+              25.0033
+            ],
+            [
+              93.38,
+              25.0033
+            ],
+            [
+              93.38,
+              24.5633
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tamenglong",
+        "state": "Manipur",
+        "elevation_m": 1260,
+        "base_slope_deg": 39,
+        "population": 140651,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.2633,
+              24.7633
+            ],
+            [
+              93.7033,
+              24.7633
+            ],
+            [
+              93.7033,
+              25.2033
+            ],
+            [
+              93.2633,
+              25.2033
+            ],
+            [
+              93.2633,
+              24.7633
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Senapati",
+        "state": "Manipur",
+        "elevation_m": 1150,
+        "base_slope_deg": 36,
+        "population": 479148,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.8,
+              25.04
+            ],
+            [
+              94.24,
+              25.04
+            ],
+            [
+              94.24,
+              25.48
+            ],
+            [
+              93.8,
+              25.48
+            ],
+            [
+              93.8,
+              25.04
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Churachandpur",
+        "state": "Manipur",
+        "elevation_m": 920,
+        "base_slope_deg": 31,
+        "population": 274143,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.4467,
+              24.1133
+            ],
+            [
+              93.8867,
+              24.1133
+            ],
+            [
+              93.8867,
+              24.5533
+            ],
+            [
+              93.4467,
+              24.5533
+            ],
+            [
+              93.4467,
+              24.1133
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Imphal West",
+        "state": "Manipur",
+        "elevation_m": 780,
+        "base_slope_deg": 12,
+        "population": 517992,
+        "risk_baseline": "LOW"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.7168,
+              24.597
+            ],
+            [
+              94.1568,
+              24.597
+            ],
+            [
+              94.1568,
+              25.037
+            ],
+            [
+              93.7168,
+              25.037
+            ],
+            [
+              93.7168,
+              24.597
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Khasi Hills",
+        "state": "Meghalaya",
+        "elevation_m": 1525,
+        "base_slope_deg": 37,
+        "population": 825922,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.66,
+              25.35
+            ],
+            [
+              92.1,
+              25.35
+            ],
+            [
+              92.1,
+              25.79
+            ],
+            [
+              91.66,
+              25.79
+            ],
+            [
+              91.66,
+              25.35
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Jaintia Hills",
+        "state": "Meghalaya",
+        "elevation_m": 1330,
+        "base_slope_deg": 33,
+        "population": 270352,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.98,
+              25.23
+            ],
+            [
+              92.42,
+              25.23
+            ],
+            [
+              92.42,
+              25.67
+            ],
+            [
+              91.98,
+              25.67
+            ],
+            [
+              91.98,
+              25.23
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ri-Bhoi",
+        "state": "Meghalaya",
+        "elevation_m": 550,
+        "base_slope_deg": 29,
+        "population": 258840,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.66,
+              25.68
+            ],
+            [
+              92.1,
+              25.68
+            ],
+            [
+              92.1,
+              26.12
+            ],
+            [
+              91.66,
+              26.12
+            ],
+            [
+              91.66,
+              25.68
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Garo Hills",
+        "state": "Meghalaya",
+        "elevation_m": 360,
+        "base_slope_deg": 27,
+        "population": 643291,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              90.0,
+              25.3
+            ],
+            [
+              90.44,
+              25.3
+            ],
+            [
+              90.44,
+              25.74
+            ],
+            [
+              90.0,
+              25.74
+            ],
+            [
+              90.0,
+              25.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South West Khasi Hills",
+        "state": "Meghalaya",
+        "elevation_m": 1100,
+        "base_slope_deg": 38,
+        "population": 110152,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.23,
+              25.1
+            ],
+            [
+              91.67,
+              25.1
+            ],
+            [
+              91.67,
+              25.54
+            ],
+            [
+              91.23,
+              25.54
+            ],
+            [
+              91.23,
+              25.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aizawl",
+        "state": "Mizoram",
+        "elevation_m": 1132,
+        "base_slope_deg": 43,
+        "population": 400309,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.4976,
+              23.5071
+            ],
+            [
+              92.9376,
+              23.5071
+            ],
+            [
+              92.9376,
+              23.9471
+            ],
+            [
+              92.4976,
+              23.9471
+            ],
+            [
+              92.4976,
+              23.5071
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lunglei",
+        "state": "Mizoram",
+        "elevation_m": 722,
+        "base_slope_deg": 36,
+        "population": 161428,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.51,
+              22.66
+            ],
+            [
+              92.95,
+              22.66
+            ],
+            [
+              92.95,
+              23.1
+            ],
+            [
+              92.51,
+              23.1
+            ],
+            [
+              92.51,
+              22.66
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Champhai",
+        "state": "Mizoram",
+        "elevation_m": 1334,
+        "base_slope_deg": 38,
+        "population": 125745,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.11,
+              23.25
+            ],
+            [
+              93.55,
+              23.25
+            ],
+            [
+              93.55,
+              23.69
+            ],
+            [
+              93.11,
+              23.69
+            ],
+            [
+              93.11,
+              23.25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mamit",
+        "state": "Mizoram",
+        "elevation_m": 718,
+        "base_slope_deg": 35,
+        "population": 86364,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.26,
+              23.71
+            ],
+            [
+              92.7,
+              23.71
+            ],
+            [
+              92.7,
+              24.15
+            ],
+            [
+              92.26,
+              24.15
+            ],
+            [
+              92.26,
+              23.71
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kohima",
+        "state": "Nagaland",
+        "elevation_m": 1444,
+        "base_slope_deg": 41,
+        "population": 267988,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.8877,
+              25.4501
+            ],
+            [
+              94.3277,
+              25.4501
+            ],
+            [
+              94.3277,
+              25.8901
+            ],
+            [
+              93.8877,
+              25.8901
+            ],
+            [
+              93.8877,
+              25.4501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wokha",
+        "state": "Nagaland",
+        "elevation_m": 1313,
+        "base_slope_deg": 37,
+        "population": 166343,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              94.05,
+              25.88
+            ],
+            [
+              94.49,
+              25.88
+            ],
+            [
+              94.49,
+              26.32
+            ],
+            [
+              94.05,
+              26.32
+            ],
+            [
+              94.05,
+              25.88
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mokokchung",
+        "state": "Nagaland",
+        "elevation_m": 1325,
+        "base_slope_deg": 34,
+        "population": 194622,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              94.3,
+              26.1
+            ],
+            [
+              94.74,
+              26.1
+            ],
+            [
+              94.74,
+              26.54
+            ],
+            [
+              94.3,
+              26.54
+            ],
+            [
+              94.3,
+              26.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Phek",
+        "state": "Nagaland",
+        "elevation_m": 1650,
+        "base_slope_deg": 42,
+        "population": 163418,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              94.28,
+              25.46
+            ],
+            [
+              94.72,
+              25.46
+            ],
+            [
+              94.72,
+              25.9
+            ],
+            [
+              94.28,
+              25.9
+            ],
+            [
+              94.28,
+              25.46
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dimapur",
+        "state": "Nagaland",
+        "elevation_m": 145,
+        "base_slope_deg": 14,
+        "population": 378811,
+        "risk_baseline": "LOW"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              93.5072,
+              25.6868
+            ],
+            [
+              93.9472,
+              25.6868
+            ],
+            [
+              93.9472,
+              26.1268
+            ],
+            [
+              93.5072,
+              26.1268
+            ],
+            [
+              93.5072,
+              25.6868
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gangtok (East Sikkim)",
+        "state": "Sikkim",
+        "elevation_m": 1650,
+        "base_slope_deg": 45,
+        "population": 283583,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3865,
+              27.1189
+            ],
+            [
+              88.8265,
+              27.1189
+            ],
+            [
+              88.8265,
+              27.5589
+            ],
+            [
+              88.3865,
+              27.5589
+            ],
+            [
+              88.3865,
+              27.1189
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mangan (North Sikkim)",
+        "state": "Sikkim",
+        "elevation_m": 1310,
+        "base_slope_deg": 49,
+        "population": 43709,
+        "risk_baseline": "CRITICAL"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.31,
+              27.28
+            ],
+            [
+              88.75,
+              27.28
+            ],
+            [
+              88.75,
+              27.72
+            ],
+            [
+              88.31,
+              27.72
+            ],
+            [
+              88.31,
+              27.28
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Namchi (South Sikkim)",
+        "state": "Sikkim",
+        "elevation_m": 1315,
+        "base_slope_deg": 39,
+        "population": 146850,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.13,
+              26.95
+            ],
+            [
+              88.57,
+              26.95
+            ],
+            [
+              88.57,
+              27.39
+            ],
+            [
+              88.13,
+              27.39
+            ],
+            [
+              88.13,
+              26.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gyalshing (West Sikkim)",
+        "state": "Sikkim",
+        "elevation_m": 1600,
+        "base_slope_deg": 44,
+        "population": 136435,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.03,
+              27.06
+            ],
+            [
+              88.47,
+              27.06
+            ],
+            [
+              88.47,
+              27.5
+            ],
+            [
+              88.03,
+              27.5
+            ],
+            [
+              88.03,
+              27.06
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pakyong",
+        "state": "Sikkim",
+        "elevation_m": 1200,
+        "base_slope_deg": 42,
+        "population": 74583,
+        "risk_baseline": "HIGH"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.36,
+              27.01
+            ],
+            [
+              88.8,
+              27.01
+            ],
+            [
+              88.8,
+              27.45
+            ],
+            [
+              88.36,
+              27.45
+            ],
+            [
+              88.36,
+              27.01
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhalai",
+        "state": "Tripura",
+        "elevation_m": 180,
+        "base_slope_deg": 24,
+        "population": 378230,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.63,
+              23.73
+            ],
+            [
+              92.07,
+              23.73
+            ],
+            [
+              92.07,
+              24.17
+            ],
+            [
+              91.63,
+              24.17
+            ],
+            [
+              91.63,
+              23.73
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gomati",
+        "state": "Tripura",
+        "elevation_m": 95,
+        "base_slope_deg": 21,
+        "population": 441538,
+        "risk_baseline": "MODERATE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.26,
+              23.31
+            ],
+            [
+              91.7,
+              23.31
+            ],
+            [
+              91.7,
+              23.75
+            ],
+            [
+              91.26,
+              23.75
+            ],
+            [
+              91.26,
+              23.31
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Tripura",
+        "state": "Tripura",
+        "elevation_m": 80,
+        "base_slope_deg": 18,
+        "population": 430751,
+        "risk_baseline": "LOW"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.23,
+              22.94
+            ],
+            [
+              91.67,
+              22.94
+            ],
+            [
+              91.67,
+              23.38
+            ],
+            [
+              91.23,
+              23.38
+            ],
+            [
+              91.23,
+              22.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Tripura",
+        "state": "Tripura",
+        "elevation_m": 35,
+        "base_slope_deg": 12,
+        "population": 918200,
+        "risk_baseline": "LOW"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.06,
+              23.63
+            ],
+            [
+              91.5,
+              23.63
+            ],
+            [
+              91.5,
+              24.07
+            ],
+            [
+              91.06,
+              24.07
+            ],
+            [
+              91.06,
+              23.63
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

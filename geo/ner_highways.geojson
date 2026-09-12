@@ -1,0 +1,250 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NH-27",
+        "name": "NH-27 (East-West Corridor)",
+        "route": "Guwahati - Nagaon - Lumding - Haflong - Silchar",
+        "importance": "CRITICAL_LIFELINE",
+        "vulnerability": "HIGH",
+        "critical_points": [
+          "Jatinga Valley",
+          "Dima Hasao Sinking Zone",
+          "Mahur Slope"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.7362,
+            26.1445
+          ],
+          [
+            92.68,
+            26.35
+          ],
+          [
+            93.16,
+            25.75
+          ],
+          [
+            93.0245,
+            25.1834
+          ],
+          [
+            92.8,
+            24.8333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NH-10",
+        "name": "NH-10 (Sikkim Lifeline)",
+        "route": "Sevoke - Teesta Bazaar - Rangpo - Singtam - Gangtok",
+        "importance": "CRITICAL_LIFELINE",
+        "vulnerability": "EXTREME",
+        "critical_points": [
+          "29th Mile",
+          "Seti Jhora",
+          "Baluakhola",
+          "Rangpo Checkpost"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            88.47,
+            26.88
+          ],
+          [
+            88.49,
+            27.06
+          ],
+          [
+            88.53,
+            27.18
+          ],
+          [
+            88.58,
+            27.23
+          ],
+          [
+            88.6065,
+            27.3389
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NH-29",
+        "name": "NH-29 (Dimapur-Kohima-Imphal)",
+        "route": "Dimapur - Chumukedima - Kohima - Senapati - Imphal",
+        "importance": "CRITICAL_LIFELINE",
+        "vulnerability": "EXTREME",
+        "critical_points": [
+          "Dz\u00fcdza Sinking Area",
+          "Phesama Slip",
+          "Makhan Ridge"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            93.7272,
+            25.9068
+          ],
+          [
+            93.78,
+            25.82
+          ],
+          [
+            94.1077,
+            25.6701
+          ],
+          [
+            94.02,
+            25.26
+          ],
+          [
+            93.9368,
+            24.817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NH-37",
+        "name": "NH-37 (Tamenglong-Noney-Imphal Corridor)",
+        "route": "Silchar - Jiribam - Noney - Tupul - Imphal",
+        "importance": "STRATEGIC",
+        "vulnerability": "HIGH",
+        "critical_points": [
+          "Tupul Railway Site",
+          "Awangkhul Bridge",
+          "Irang River Crossing"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.8,
+            24.8333
+          ],
+          [
+            93.12,
+            24.8
+          ],
+          [
+            93.6,
+            24.7833
+          ],
+          [
+            93.75,
+            24.8
+          ],
+          [
+            93.9368,
+            24.817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NH-6",
+        "name": "NH-6 (Meghalaya-Tripura Link)",
+        "route": "Jorabat - Shillong - Jowai - Ladrymbai - Silchar - Agartala",
+        "importance": "CRITICAL_LIFELINE",
+        "vulnerability": "HIGH",
+        "critical_points": [
+          "Sonapur Tunnel Zone",
+          "Umiam Lake Bypass",
+          "Khlieriat Pass"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.88,
+            25.9
+          ],
+          [
+            91.88,
+            25.57
+          ],
+          [
+            92.2,
+            25.45
+          ],
+          [
+            92.4,
+            25.25
+          ],
+          [
+            92.8,
+            24.8333
+          ],
+          [
+            91.28,
+            23.85
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NH-13",
+        "name": "NH-13 (Trans-Arunachal Highway)",
+        "route": "Tawang - Bomdila - Nechiphu - Itanagar - Pasighat",
+        "importance": "STRATEGIC_DEFENSE",
+        "vulnerability": "EXTREME",
+        "critical_points": [
+          "Sela Pass Approach",
+          "Bhalukpong Gorge",
+          "Kimin-Ziro Stretch"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.8594,
+            27.5861
+          ],
+          [
+            92.42,
+            27.26
+          ],
+          [
+            93.62,
+            27.12
+          ],
+          [
+            94.7278,
+            28.218
+          ],
+          [
+            95.33,
+            28.07
+          ]
+        ]
+      }
+    }
+  ]
+}
