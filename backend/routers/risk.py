@@ -7,6 +7,7 @@ from typing import List, Dict, Any, Optional
 from datetime import datetime, timezone
 from backend.services.risk_service import (
     get_all_locations_risk,
+    build_registry_fallback_risk,
     calculate_location_risk,
     DISTRICTS_CACHE,
     load_geo_registries
@@ -18,7 +19,11 @@ router = APIRouter(prefix="/risk", tags=["Risk Intelligence"])
 @router.get("/overview")
 async def get_risk_overview():
     load_geo_registries()
-    all_risks = await get_all_locations_risk()
+    try:
+        all_risks = await get_all_locations_risk()
+    except Exception as e:
+        print(f"[RISK OVERVIEW] live aggregation failed: {e}")
+        all_risks = build_registry_fallback_risk()
 
     critical_count = sum(1 for r in all_risks if r["current_risk"] == "CRITICAL")
     high_count = sum(1 for r in all_risks if r["current_risk"] == "HIGH")
@@ -74,7 +79,11 @@ async def get_risk_overview():
 
 @router.get("/locations")
 async def get_all_locations(horizon: str = Query("Current", description="Current, +6h, +12h, +24h, +48h, +72h")):
-    all_risks = await get_all_locations_risk()
+    try:
+        all_risks = await get_all_locations_risk()
+    except Exception as e:
+        print(f"[RISK LOCATIONS] live aggregation failed: {e}")
+        all_risks = build_registry_fallback_risk()
     
     # If a specific future horizon is requested, adapt the current_risk to that horizon's forecast without mutating cache
     if horizon != "Current":
