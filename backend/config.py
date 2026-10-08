@@ -55,7 +55,7 @@ class Settings(BaseSettings):
     REDIS_URL: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
     
     # Uploads directory for field photos & satellite scenes
-    UPLOAD_DIR: str = "./data/uploads"
+    UPLOAD_DIR: str = os.getenv("UPLOAD_DIR", "/tmp/rakshak_uploads" if os.getenv("VERCEL") else "./data/uploads")
     
     # CORS Allowed Origins
     CORS_ORIGINS: list[str] = [
