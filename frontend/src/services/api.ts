@@ -231,6 +231,31 @@ const DEFAULT_LOCATIONS: LocationRiskDetail[] = [
   }
 ];
 
+const buildRegistryFallbackLocations = (registry: any[]): LocationRiskDetail[] => registry.map((d: any) => {
+  const p = Number(d.failure_probability ?? 0);
+  const risk: any = p >= 0.78 ? 'CRITICAL' : p >= 0.58 ? 'HIGH' : p >= 0.40 ? 'WARNING' : p >= 0.22 ? 'WATCH' : 'LOW';
+  const priority: any = p >= 0.78 ? 'P1' : p >= 0.58 ? 'P2' : p >= 0.40 ? 'P3' : p >= 0.22 ? 'P4' : 'P5';
+  return {
+    id: `ZONE-${String(d.name).replace(/\\s+/g, '-').toUpperCase()}`,
+    district: d.name, state: d.state, latitude: d.lat, longitude: d.lon,
+    elevation_m: d.elev ?? 800, slope_deg: d.base_slope ?? 30, aspect_deg: 180,
+    population: d.pop ?? 0, current_risk: risk, probability: p, severity_score: p * 100,
+    emergency_priority: priority, priority_score: Math.max(5, p * 100),
+    priority_explanation: 'Registry-backed susceptibility baseline; live telemetry unavailable.',
+    confidence: 0.60, data_nature: 'HISTORICAL_CLIMATOLOGY',
+    data_freshness: 'Registry fallback — live telemetry unavailable', risk_trend: 'STABLE',
+    rainfall_1h_mm: 0, rainfall_6h_mm: 0, rainfall_24h_mm: 0, rainfall_72h_mm: 0,
+    soil_moisture_pct: 0, soil_saturation_state: 'NORMAL',
+    geographic_risk_context: d.geographic_risk_context ?? 'NER monitored district',
+    lower_bound_susceptibility_pct: d.lower_bound_susceptibility_pct ?? p * 100,
+    failure_probability: p, failure_probability_pct: p * 100,
+    primary_factors: [], explanation_summary: 'Registry-backed susceptibility baseline; live telemetry unavailable.',
+    forecast_timeline: [{ horizon: 'Current', hours_ahead: 0, predicted_risk: risk, probability: p, rainfall_forecast_mm: 0, soil_moisture_pct: 0, confidence: 0.60, data_nature: 'HISTORICAL_CLIMATOLOGY' }],
+    nearby_highways: [], nearby_infrastructure: [],
+    recommended_authority_actions: ['Restore live meteorological telemetry for operational monitoring.']
+  } as LocationRiskDetail;
+});
+
 export const api = {
   async getOverview(): Promise<OverviewStats> {
     try {
@@ -265,6 +290,18 @@ export const api = {
     if (cached) {
       try { return JSON.parse(cached); } catch {}
     }
+
+    // Last-resort full-coverage fallback: never collapse the map to the 2 demo records.
+    try {
+      const registryRes = await fetch('/ner_district_list.json', { cache: 'no-store' });
+      if (registryRes.ok) {
+        const registry = await registryRes.json();
+        const fullRegistry = buildRegistryFallbackLocations(registry);
+        try { localStorage.setItem(CACHE_KEYS.LOCATIONS, JSON.stringify(fullRegistry)); } catch {}
+        return fullRegistry;
+      }
+    } catch {}
+
     return DEFAULT_LOCATIONS;
   },
 
