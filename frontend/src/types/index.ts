@@ -15,7 +15,7 @@ export type IncidentStatus =
   | 'RESOLVED'
   | 'REJECTED'
   | 'CANCELLED';
-export type DataSourceType = 'LIVE' | 'OBSERVED' | 'FORECAST' | 'MODEL_PREDICTION' | 'HISTORICAL' | 'SATELLITE' | 'CITIZEN_REPORTED' | 'SENSOR' | 'SIMULATION' | 'DEMO_DATA';
+export type DataSourceType = 'LIVE' | 'OBSERVED' | 'FORECAST' | 'MODEL_PREDICTION' | 'HISTORICAL' | 'HISTORICAL_CLIMATOLOGY' | 'SATELLITE' | 'CITIZEN_REPORTED' | 'SENSOR' | 'SIMULATION' | 'DEMO_DATA';
 
 export interface FeatureFactor {
   feature_key: string;
