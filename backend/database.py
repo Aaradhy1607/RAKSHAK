@@ -11,7 +11,7 @@ import uuid
 from datetime import datetime, timezone
 from typing import List, Dict, Any, Optional
 
-DB_PATH = "data/landslide_system.db"
+DB_PATH = os.getenv("DATABASE_PATH", "/tmp/landslide_system.db" if os.getenv("VERCEL") else "data/landslide_system.db")
 
 def get_db_connection():
     os.makedirs(os.path.dirname(DB_PATH) or ".", exist_ok=True)
