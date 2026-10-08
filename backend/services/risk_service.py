@@ -19,7 +19,7 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime, timezone
 from ml.dataset import FEATURE_NAMES, transform_soil_moisture_plateau, compute_engineered_features
 from ml.explainer import RiskExplainer
-from backend.services.weather_service import fetch_weather_telemetry
+from backend.services.weather_service import fetch_weather_telemetry, generate_calibrated_weather_fallback
 
 explainer = RiskExplainer()
 
@@ -426,6 +426,50 @@ async def calculate_location_risk(district_data: Dict[str, Any], sim_override: O
         "isolation_impact": get_highway_isolation_impact(name, state, risk_level, nearby_highways),
         "recommended_authority_actions": actions
     }
+
+
+def build_registry_fallback_risk() -> List[Dict[str, Any]]:
+    """Build a complete, deterministic registry-backed response when live/model processing fails.
+    This uses only values already present in the NER district registry plus the explicit
+    climatology fallback; it never invents live observations.
+    """
+    load_geo_registries()
+    results: List[Dict[str, Any]] = []
+    for dist in DISTRICTS_CACHE:
+        name = dist["name"]
+        state = dist["state"]
+        weather = generate_calibrated_weather_fallback(dist["lat"], dist["lon"], state, name)
+        prob = float(dist.get("failure_probability", 0.0))
+        risk = classify_risk_level(prob)
+        base_slope = float(dist.get("base_slope", 30.0))
+        pop = int(dist.get("pop", 150000))
+        nearby_infra = [inf for inf in INFRASTRUCTURE_CACHE if inf.get("properties", {}).get("district") == name or inf.get("properties", {}).get("state") == state]
+        nearby_highways = [hw for hw in HIGHWAYS_CACHE if state in hw.get("properties", {}).get("state_segments", [])]
+        tier, eps, priority_explanation = compute_emergency_priority(prob, pop, nearby_infra, nearby_highways, base_slope)
+        results.append({
+            "id": f"ZONE-{name.replace(' ', '-').upper()}", "district": name, "state": state,
+            "latitude": dist["lat"], "longitude": dist["lon"], "elevation_m": dist.get("elev", 800),
+            "slope_deg": base_slope, "aspect_deg": 180.0, "population": pop,
+            "current_risk": risk, "probability": round(prob, 3), "severity_score": round(prob * 100, 1),
+            "emergency_priority": tier, "priority_score": eps, "priority_explanation": priority_explanation,
+            "confidence": 0.60, "data_nature": "HISTORICAL_CLIMATOLOGY",
+            "data_freshness": "Deterministic climatology fallback; live telemetry unavailable",
+            "risk_trend": "STABLE", "rainfall_1h_mm": weather["rainfall_1h_mm"],
+            "rainfall_6h_mm": weather["rainfall_6h_mm"], "rainfall_24h_mm": weather["rainfall_24h_mm"],
+            "rainfall_72h_mm": weather["rainfall_72h_mm"], "soil_moisture_pct": weather["soil_moisture_pct"],
+            "soil_saturation_state": "SATURATED_PLATEAU" if weather["soil_moisture_pct"] >= 70 else ("HIGH" if weather["soil_moisture_pct"] >= 60 else "NORMAL"),
+            "geographic_risk_context": dist.get("geographic_risk_context", "NER monitored district"),
+            "lower_bound_susceptibility_pct": dist.get("lower_bound_susceptibility_pct", round(prob * 100, 1)),
+            "failure_probability": prob, "failure_probability_pct": round(prob * 100, 1),
+            "primary_factors": [], "explanation_summary": "Registry-backed susceptibility baseline; live telemetry was unavailable.",
+            "forecast_timeline": [
+                {"horizon": "Current", "hours_ahead": 0, "predicted_risk": risk, "probability": round(prob, 3), "rainfall_forecast_mm": weather["rainfall_24h_mm"], "soil_moisture_pct": weather["soil_moisture_pct"], "confidence": 0.60, "data_nature": "HISTORICAL_CLIMATOLOGY"}
+            ],
+            "nearby_highways": nearby_highways[:2], "nearby_infrastructure": nearby_infra[:3],
+            "isolation_impact": get_highway_isolation_impact(name, state, risk, nearby_highways),
+            "recommended_authority_actions": ["Restore live meteorological telemetry for operational monitoring.", "Maintain baseline district surveillance until live data recovers."]
+        })
+    return results
 
 async def get_all_locations_risk(sim_districts: Optional[Dict[str, Any]] = None, force_refresh: bool = False) -> List[Dict[str, Any]]:
     load_geo_registries()
