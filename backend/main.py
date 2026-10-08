@@ -125,17 +125,20 @@ async def auto_escalation_monitor():
 
 @app.on_event("startup")
 async def startup_prewarm():
-    """Pre-warm ML models, geo registries, and calculated risk matrices, and launch auto-escalation daemon."""
+    """Warm lightweight registries locally; avoid long-lived server workers on Vercel."""
     try:
-        from backend.services.risk_service import load_geo_registries, get_all_locations_risk, get_ml_model
+        from backend.services.risk_service import load_geo_registries, get_ml_model
         load_geo_registries()
         get_ml_model()
-        await get_all_locations_risk()
+
+        # Vercel Functions are request-driven; avoid a full NER weather/model
+        # sweep and an infinite background worker during cold starts.
+        if not os.getenv("VERCEL"):
+            from backend.services.risk_service import get_all_locations_risk
+            await get_all_locations_risk()
+            asyncio.create_task(auto_escalation_monitor())
     except Exception as e:
         print(f"[STARTUP] Pre-warm notice: {e}")
-
-    # Launch background escalation daemon
-    asyncio.create_task(auto_escalation_monitor())
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
